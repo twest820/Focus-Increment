@@ -1,0 +1,11 @@
+# debugging settings
+*/Properties/launchSettings.json
+
+# build and test results 
+bin/
+packages/
+obj/
+TestResults/
+
+# Visual Studio cache/options directory 
+.vs/
