@@ -1,4 +1,5 @@
-﻿using System.Xml;
+﻿using System;
+using System.Xml;
 
 namespace FocusIncrement.Zerene
 {
@@ -214,6 +215,440 @@ namespace FocusIncrement.Zerene
             this.StereoOrderingLeftRightIndexSeparation = 1;
             this.WatchDirectoryOptionsAcceptViaDelay = false;
             this.WatchDirectoryOptionsAcceptViaDelaySeconds = 2.0;
+        }
+
+        public Preferences(XmlReader reader)
+        {
+            while (reader.EOF == false)
+            {
+                if (reader.IsStartElement())
+                {
+                    if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerBacklashMillimeters))
+                    {
+                        this.AcquisitionSequencerBacklashMillimeters = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerCommandLogging))
+                    {
+                        this.AcquisitionSequencerCommandLogging = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerDistancePerStepperRotation))
+                    {
+                        this.AcquisitionSequencerDistancePerStepperRotation = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerEndPosition))
+                    {
+                        this.AcquisitionSequencerEndPosition = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerMaximumMmPerSecond))
+                    {
+                        this.AcquisitionSequencerMaximumMmPerSecond = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerMicrostepsPerRotation))
+                    {
+                        this.AcquisitionSequencerMicrostepsPerRotation = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerMovementRampTime))
+                    {
+                        this.AcquisitionSequencerMovementRampTime = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerNumberOfSteps))
+                    {
+                        this.AcquisitionSequencerNumberOfSteps = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerPrecisionThreshold))
+                    {
+                        this.AcquisitionSequencerPrecisionThreshold = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerPrerunMillimeters))
+                    {
+                        this.AcquisitionSequencerPrerunMillimeters = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerRppIndicatorLeft))
+                    {
+                        this.AcquisitionSequencerRppIndicatorLeft = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerRppIndicatorRight))
+                    {
+                        this.AcquisitionSequencerRppIndicatorRight = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerSettlingTime))
+                    {
+                        this.AcquisitionSequencerSettlingTime = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerShutterActivationsPerStep))
+                    {
+                        this.AcquisitionSequencerShutterActivationsPerStep = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerShutterAfterTime))
+                    {
+                        this.AcquisitionSequencerShutterAfterTime = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerShutterBetweenTime))
+                    {
+                        this.AcquisitionSequencerShutterBetweenTime = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerShutterPulseTime))
+                    {
+                        this.AcquisitionSequencerShutterPulseTime = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerStartPosition))
+                    {
+                        this.AcquisitionSequencerStartPosition = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerStepSize))
+                    {
+                        this.AcquisitionSequencerStepSize = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerStepSizeAdjustmentFactor))
+                    {
+                        this.AcquisitionSequencerStepSizeAdjustmentFactor = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AcquisitionSequencerStepSizesFile))
+                    {
+                        this.AcquisitionSequencerStepSizesFile = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlAddNewFilesAsAlreadyAligned))
+                    {
+                        this.AlignmentControlAddNewFilesAsAlreadyAligned = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlAlignmentSettingsChanged))
+                    {
+                        this.AlignmentControlAlignmentSettingsChanged = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlAllowRotation))
+                    {
+                        this.AlignmentControlAllowRotation = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlAllowScale))
+                    {
+                        this.AlignmentControlAllowScale = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlAllowShiftX))
+                    {
+                        this.AlignmentControlAllowShiftX = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlAllowShiftY))
+                    {
+                        this.AlignmentControlAllowShiftY = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlAutoTsvFile))
+                    {
+                        this.AlignmentControlAutoTsvFile = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlBrightnessSettingsChanged))
+                    {
+                        this.AlignmentControlBrightnessSettingsChanged = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlCorrectBrightness))
+                    {
+                        this.AlignmentControlCorrectBrightness = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlForceAllAlignAgainstFirst))
+                    {
+                        this.AlignmentControlForceAllAlignAgainstFirst = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlMaxRelDegRotation))
+                    {
+                        this.AlignmentControlMaxRelDegRotation = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlMaxRelPctScale))
+                    {
+                        this.AlignmentControlMaxRelPctScale = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlMaxRelPctShiftX))
+                    {
+                        this.AlignmentControlMaxRelPctShiftX = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlMaxRelPctShiftY))
+                    {
+                        this.AlignmentControlMaxRelPctShiftY = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlOrderAutomatic))
+                    {
+                        this.AlignmentControlOrderAutomatic = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlOrderNarrowFirst))
+                    {
+                        this.AlignmentControlOrderNarrowFirst = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AlignmentControlUseMaximumPrecisionRules))
+                    {
+                        this.AlignmentControlUseMaximumPrecisionRules = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.AllowReportingUsageStatistics))
+                    {
+                        this.AllowReportingUsageStatistics = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.BatchFileChooserLastDirectory))
+                    {
+                        this.BatchFileChooserLastDirectory = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.ColorManagementCopyIccProfileExternally))
+                    {
+                        this.ColorManagementCopyIccProfileExternally = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.ColorManagementDebugPrintProfile))
+                    {
+                        this.ColorManagementDebugPrintProfile = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.ColorManagementInputOption))
+                    {
+                        this.ColorManagementInputOption = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.ColorManagementInputOptionAssumedProfile))
+                    {
+                        this.ColorManagementInputOptionAssumedProfile = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.ColorManagementManageZSDisplays))
+                    {
+                        this.ColorManagementManageZSDisplays = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.ColorManagementManageZSDisplaysHasChanged))
+                    {
+                        this.ColorManagementManageZSDisplaysHasChanged = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.ColorManagementOutputOption))
+                    {
+                        this.ColorManagementOutputOption = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlAlgorithmIdentifier))
+                    {
+                        this.DepthMapControlAlgorithmIdentifier = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlContrastThresholdLevel))
+                    {
+                        this.DepthMapControlContrastThresholdLevel = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlContrastThresholdPercentile))
+                    {
+                        this.DepthMapControlContrastThresholdPercentile = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlEstimationRadius))
+                    {
+                        this.DepthMapControlEstimationRadius = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlExternalMaskColorRgba))
+                    {
+                        this.DepthMapControlExternalMaskColorRgba = this.ReadValueAsByteQuad(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlExternalMaskFile))
+                    {
+                        this.DepthMapControlExternalMaskFile = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlSaveDepthMapImage))
+                    {
+                        this.DepthMapControlSaveDepthMapImage = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlSaveDepthMapImageDirectory))
+                    {
+                        this.DepthMapControlSaveDepthMapImageDirectory = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlSaveUsedPixelImages))
+                    {
+                        this.DepthMapControlSaveUsedPixelImages = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlSmoothingRadius))
+                    {
+                        this.DepthMapControlSmoothingRadius = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlThresholdMaskColorRgba))
+                    {
+                        this.DepthMapControlThresholdMaskColorRgba = this.ReadValueAsByteQuad(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlUseFixedContrastThresholdLevel))
+                    {
+                        this.DepthMapControlUseFixedContrastThresholdLevel = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlUseFixedContrastThresholdPercentile))
+                    {
+                        this.DepthMapControlUseFixedContrastThresholdPercentile = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.DepthMapControlUsedPixelFractionThreshold))
+                    {
+                        this.DepthMapControlUsedPixelFractionThreshold = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.FileIOIgnoreExifOrientation))
+                    {
+                        this.FileIOIgnoreExifOrientation = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.FileIOUseExternalTiffReader))
+                    {
+                        this.FileIOUseExternalTiffReader = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.InterpolatorRenderingSelection))
+                    {
+                        this.InterpolatorRenderingSelection = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.InterpolatorShowAdvanced))
+                    {
+                        this.InterpolatorShowAdvanced = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.OriginalSourceFilesFolderPath))
+                    {
+                        this.OriginalSourceFilesFolderPath = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.OutputImageNamingTemplate))
+                    {
+                        this.OutputImageNamingTemplate = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PrecropLimitsString))
+                    {
+                        this.PrecropLimitsString = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PrecropSelected))
+                    {
+                        this.PrecropSelected = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.Preferences))
+                    {
+                        reader.Read();
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PrerotationDegrees))
+                    {
+                        this.PrerotationDegrees = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PrerotationExifTagIgnore))
+                    {
+                        this.PrerotationExifTagIgnore = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PrerotationSelected))
+                    {
+                        this.PrerotationSelected = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PresizeUserSettingScale))
+                    {
+                        this.PresizeUserSettingScale = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PresizeUserSettingSelected))
+                    {
+                        this.PresizeUserSettingSelected = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PresizeWorkingScale))
+                    {
+                        this.PresizeWorkingScale = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PyramidControlGritSuppressionMethod))
+                    {
+                        this.PyramidControlGritSuppressionMethod = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PyramidControlRetainOnlyUdrImage))
+                    {
+                        this.PyramidControlRetainOnlyUdrImage = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PyramidControlRetainUdrImage))
+                    {
+                        this.PyramidControlRetainUdrImage = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.PyramidControlUseAllChannels))
+                    {
+                        this.PyramidControlUseAllChannels = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.RetouchingBrushHardness))
+                    {
+                        this.RetouchingBrushHardness = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.RetouchingBrushShowBrushes))
+                    {
+                        this.RetouchingBrushShowBrushes = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.RetouchingBrushType))
+                    {
+                        this.RetouchingBrushType = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.RetouchingBrushWidth))
+                    {
+                        this.RetouchingBrushWidth = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SaveImageBitsPerColor))
+                    {
+                        this.SaveImageBitsPerColor = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SaveImageCompressionQuality))
+                    {
+                        this.SaveImageCompressionQuality = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SaveImageCompressionType))
+                    {
+                        this.SaveImageCompressionType = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SaveImageDefaultFolderStrategy))
+                    {
+                        this.SaveImageDefaultFolderStrategy = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SaveImageFileType))
+                    {
+                        this.SaveImageFileType = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SaveImageFolderPathLastUsed))
+                    {
+                        this.SaveImageFolderPathLastUsed = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SaveImagePropagateExif))
+                    {
+                        this.SaveImagePropagateExif = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SaveImageRescaleImageToAvoidOverflow))
+                    {
+                        this.SaveImageRescaleImageToAvoidOverflow = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SkewSequenceNumberOfOutputImages))
+                    {
+                        this.SkewSequenceNumberOfOutputImages = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SkewSequenceSelected))
+                    {
+                        this.SkewSequenceSelected = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SkewSequenceShiftXPctLimit1))
+                    {
+                        this.SkewSequenceShiftXPctLimit1 = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SkewSequenceShiftXPctLimit2))
+                    {
+                        this.SkewSequenceShiftXPctLimit2 = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SkewSequenceShiftYPctLimit1))
+                    {
+                        this.SkewSequenceShiftYPctLimit1 = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SkewSequenceShiftYPctLimit2))
+                    {
+                        this.SkewSequenceShiftYPctLimit2 = this.ReadValueAsDouble(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.SkewSequenceUseConicalPath))
+                    {
+                        this.SkewSequenceUseConicalPath = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.StackingControlFrameSkipFactor))
+                    {
+                        this.StackingControlFrameSkipFactor = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.StackingControlFrameSkipSelected))
+                    {
+                        this.StackingControlFrameSkipSelected = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.StereoOrderingLeftRightIndexSeparation))
+                    {
+                        this.StereoOrderingLeftRightIndexSeparation = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.WatchDirectoryOptionsAcceptViaDelay))
+                    {
+                        this.WatchDirectoryOptionsAcceptViaDelay = this.ReadValueAsBoolean(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.WatchDirectoryOptionsAcceptViaDelaySeconds))
+                    {
+                        this.WatchDirectoryOptionsAcceptViaDelaySeconds = this.ReadValueAsDouble(reader);
+                    }
+                    else
+                    {
+                        throw new XmlException(String.Format("Unhandled element '{0}'.", reader.Name));
+                    }
+                }
+                else
+                {
+                    reader.Read();
+                }
+            }
         }
 
         public void Write(XmlWriter writer)

@@ -4,4 +4,8 @@ $testResults = Get-ChildItem -Path ([System.IO.Path]::Combine($unitTestPath, "..
 $stackDirectory = [System.IO.Path]::Combine($testResults[0].FullName, "Out")
 
 Import-Module -Name ".\bin\Debug\FocusIncrement.dll"
-Convert-Helicon -StackDirectory $stackDirectory
+Convert-Helicon -StackDirectory $stackDirectory;
+
+Get-Alignment -Project ([System.IO.Path]::Combine($stackDirectory, "P1070712.zsj"));
+Get-Alignment -Project ([System.IO.Path]::Combine($stackDirectory, "P1070726B.hproj"));
+Get-Alignment -Project ([System.IO.Path]::Combine($stackDirectory, "P1070726C.hproj"));

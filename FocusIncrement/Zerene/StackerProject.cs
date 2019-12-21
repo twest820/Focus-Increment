@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace FocusIncrement.Zerene
 {
-    internal class StackerProject
+    internal class StackerProject : ZereneXmlElement
     {
         public List<OutputImage> OutputImages { get; private set; }
         public int OutputSequenceNumber { get; set; }
@@ -19,6 +19,66 @@ namespace FocusIncrement.Zerene
             this.Preferences = new Preferences();
             this.StackerVersion = "1.04 Build T2019-10-07-1410";
             this.StackFrames = new List<StackFrame>();
+        }
+
+        public StackerProject(string projectFilePath)
+        {
+            this.OutputImages = new List<OutputImage>();
+            this.StackFrames = new List<StackFrame>();
+
+            using XmlReader reader = XmlTextReader.Create(projectFilePath);
+            reader.MoveToContent();
+            while (reader.EOF == false)
+            {
+                if (reader.IsStartElement())
+                {
+                    // most common cases first
+                    if (reader.IsStartElement(Constant.Zerene.Element.StackFrame))
+                    {
+                        this.StackFrames.Add(new StackFrame(reader.ReadSubtree()));
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.OutputImage))
+                    {
+                        this.OutputImages.Add(new OutputImage(reader.ReadSubtree()));
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.OutputImages))
+                    {
+                        reader.Read();
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.OutputSequenceNumber))
+                    {
+                        this.OutputSequenceNumber = this.ReadValueAsInt(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.Preferences))
+                    {
+                        this.Preferences = new Preferences(reader.ReadSubtree());
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.StackFrames))
+                    {
+                        reader.Read();
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.StackerProject))
+                    {
+                        reader.Read();
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.StackerVersion))
+                    {
+                        this.StackerVersion = reader.ReadElementContentAsString();
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.ZereneStacker))
+                    {
+                        reader.Read();
+                    }
+                    else
+                    {
+                        throw new XmlException(String.Format("Unhandled element '{0}'.", reader.Name));
+                    }
+                }
+                else
+                {
+                    reader.Read();
+                }
+            }
         }
 
         public void WriteAndCopyOutputs(string directoryPath, List<string> outputFileSourcePaths)

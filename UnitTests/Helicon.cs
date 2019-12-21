@@ -26,6 +26,19 @@ namespace FocusIncrement.Test
             List<object> _ = convertHelicon.Invoke<object>().ToList();
         }
 
+        [TestMethod]
+        public void GetAlignment()
+        {
+            foreach (string projectFile in new string[] { TestConstant.HeliconProjectB, TestConstant.HeliconProjectC })
+            {
+                GetAlignment getAlignment = new GetAlignment()
+                {
+                    Project = Path.Combine(this.TestContext.DeploymentDirectory, projectFile)
+                };
+                List<object> _ = getAlignment.Invoke<object>().ToList();
+            }
+        }
+
         private void EnsureMockOutput(string workingDirectory, string projectFileName)
         {
             string filesPath = Path.Combine(workingDirectory, Path.GetFileNameWithoutExtension(projectFileName) + "_files");

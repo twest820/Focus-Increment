@@ -1,0 +1,1637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZereneStacker>
+  <StackerProject>
+    <StackerVersion value="1.04 Build T2019-10-07-1410" />
+    <Preferences>
+      <AcquisitionSequencer.BacklashMillimeters value="0.22" />
+      <AcquisitionSequencer.CommandLogging value="false" />
+      <AcquisitionSequencer.DistancePerStepperRotation value="1.5875" />
+      <AcquisitionSequencer.EndPosition value="0" />
+      <AcquisitionSequencer.MaximumMmPerSecond value="2.0" />
+      <AcquisitionSequencer.MicrostepsPerRotation value="3200" />
+      <AcquisitionSequencer.MovementRampTime value="2.0" />
+      <AcquisitionSequencer.NumberOfSteps value="5" />
+      <AcquisitionSequencer.PrecisionThreshold value="0.05" />
+      <AcquisitionSequencer.PrerunMillimeters value="0.0" />
+      <AcquisitionSequencer.RPPIndicatorLeft value="-100.0" />
+      <AcquisitionSequencer.RPPIndicatorRight value="+100.0" />
+      <AcquisitionSequencer.SettlingTime value="3.0" />
+      <AcquisitionSequencer.ShutterActivationsPerStep value="1" />
+      <AcquisitionSequencer.ShutterAfterTime value="2.0" />
+      <AcquisitionSequencer.ShutterBetweenTime value="1.0" />
+      <AcquisitionSequencer.ShutterPulseTime value="0.3" />
+      <AcquisitionSequencer.StartPosition value="0" />
+      <AcquisitionSequencer.StepSize value="0.1" />
+      <AcquisitionSequencer.StepSizeAdjustmentFactor value="1.0" />
+      <AcquisitionSequencer.StepSizesFile value="" />
+      <AlignmentControl.AddNewFilesAsAlreadyAligned value="false" />
+      <AlignmentControl.AlignmentSettingsChanged value="false" />
+      <AlignmentControl.AllowRotation value="true" />
+      <AlignmentControl.AllowScale value="true" />
+      <AlignmentControl.AllowShiftX value="true" />
+      <AlignmentControl.AllowShiftY value="true" />
+      <AlignmentControl.AutoTSVFile value="false" />
+      <AlignmentControl.BrightnessSettingsChanged value="false" />
+      <AlignmentControl.CorrectBrightness value="true" />
+      <AlignmentControl.ForceAllAlignAgainstFirst value="false" />
+      <AlignmentControl.MaxRelDegRotation value="20" />
+      <AlignmentControl.MaxRelPctScale value="20" />
+      <AlignmentControl.MaxRelPctShiftX value="20" />
+      <AlignmentControl.MaxRelPctShiftY value="20" />
+      <AlignmentControl.Order.Automatic value="true" />
+      <AlignmentControl.Order.NarrowFirst value="true" />
+      <AlignmentControl.UseMaximumPrecisionRules value="false" />
+      <AllowReporting.UsageStatistics value="false" />
+      <BatchFileChooser.LastDirectory value="C:\Users" />
+      <ColorManagement.CopyICCProfileExternally value="false" />
+      <ColorManagement.DebugPrintProfile value="false" />
+      <ColorManagement.InputOption value="Use_EXIF_and_DCF_rules" />
+      <ColorManagement.InputOption.AssumedProfile value="sRGB IEC61966-2.1" />
+      <ColorManagement.ManageZSDisplays value="false" />
+      <ColorManagement.ManageZSDisplaysHasChanged value="false" />
+      <ColorManagement.OutputOption value="CopyInput" />
+      <DepthMapControl.AlgorithmIdentifier value="1" />
+      <DepthMapControl.ContrastThresholdLevel value="0.0010852944" />
+      <DepthMapControl.ContrastThresholdPercentile value="32.6" />
+      <DepthMapControl.EstimationRadius value="10" />
+      <DepthMapControl.ExternalMaskColorRGBA value="80,0,0,128" />
+      <DepthMapControl.ExternalMaskFile value="" />
+      <DepthMapControl.SaveDepthMapImage value="false" />
+      <DepthMapControl.SaveDepthMapImageDirectory value="{project}\DepthMaps" />
+      <DepthMapControl.SaveUsedPixelImages value="false" />
+      <DepthMapControl.SmoothingRadius value="5" />
+      <DepthMapControl.ThresholdMaskColorRGBA value="0,0,0,255" />
+      <DepthMapControl.UseFixedContrastThresholdLevel value="false" />
+      <DepthMapControl.UseFixedContrastThresholdPercentile value="false" />
+      <DepthMapControl.UsedPixelFractionThreshold value="0.5" />
+      <FileIO.IgnoreEXIFOrientation value="false" />
+      <FileIO.UseExternalTIFFReader value="false" />
+      <Interpolator.RenderingSelection value="Interpolator.Spline4x4" />
+      <Interpolator.ShowAdvanced value="false" />
+      <OriginalSourceFilesFolder.Path value="" />
+      <OutputImageNaming.Template value="{datetime} ZS {method}" />
+      <Precrop.LimitsString value="" />
+      <Precrop.Selected value="false" />
+      <Prerotation.Degrees value="0" />
+      <Prerotation.EXIFtag.ignore value="false" />
+      <Prerotation.Selected value="false" />
+      <Presize.UserSetting.Scale value="1.0" />
+      <Presize.UserSetting.Selected value="false" />
+      <Presize.Working.Scale value="1.0" />
+      <PyramidControl.GritSuppressionMethod value="1" />
+      <PyramidControl.RetainOnlyUDRImage value="false" />
+      <PyramidControl.RetainUDRImage value="false" />
+      <PyramidControl.UseAllChannels value="false" />
+      <RetouchingBrush.Hardness value="0.5" />
+      <RetouchingBrush.ShowBrushes value="true" />
+      <RetouchingBrush.Type value="Details" />
+      <RetouchingBrush.Width value="30.073105" />
+      <SaveImage.BitsPerColor value="8" />
+      <SaveImage.CompressionQuality value="0.9166667" />
+      <SaveImage.CompressionType value="none" />
+      <SaveImage.DefaultFolderStrategy value="WithSource" />
+      <SaveImage.FileType value="jpg" />
+      <SaveImage.FolderPathLastUsed value="Pictures\2019 12 08" />
+      <SaveImage.PropagateEXIF value="false" />
+      <SaveImage.RescaleImageToAvoidOverflow value="false" />
+      <SkewSequence.NumberOfOutputImages value="3" />
+      <SkewSequence.Selected value="false" />
+      <SkewSequence.ShiftXPct.Limit1 value="-3.0" />
+      <SkewSequence.ShiftXPct.Limit2 value="3.0" />
+      <SkewSequence.ShiftYPct.Limit1 value="0.0" />
+      <SkewSequence.ShiftYPct.Limit2 value="0.0" />
+      <SkewSequence.UseConicalPath value="false" />
+      <StackingControl.FrameSkipFactor value="1" />
+      <StackingControl.FrameSkipSelected value="false" />
+      <StereoOrdering.LeftRightIndexSeparation value="1" />
+      <WatchDirectoryOptions.AcceptViaDelay value="false" />
+      <WatchDirectoryOptions.AcceptViaDelaySeconds value="2.0" />
+    </Preferences>
+    <StackFrames length="84">
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-004.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="0.0" />
+          <YOffset value="0.0" />
+          <Scale value="1.0" />
+          <Rotate value="0.0" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="1.0" />
+          <Scale value="1.0" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1442.jpg" />
+        <CachedRegScreenImage value="-Aligned-1443.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-005.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.1932498718059126E-5" />
+          <YOffset value="2.418488212048986E-4" />
+          <Scale value="0.9985435336508199" />
+          <Rotate value="-2.845772418850201E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9983124859575896" />
+          <Scale value="1.0064129948050047" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1444.jpg" />
+        <CachedRegScreenImage value="-Aligned-1445.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-006.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.802648049127221E-5" />
+          <YOffset value="2.568361487578219E-4" />
+          <Scale value="0.9990058046509991" />
+          <Rotate value="-3.3879230253913706E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9878795463724189" />
+          <Scale value="1.0021030325605058" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1446.jpg" />
+        <CachedRegScreenImage value="-Aligned-1447.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-007.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.211212049847312E-5" />
+          <YOffset value="2.612330779892813E-4" />
+          <Scale value="1.0000692763552086" />
+          <Rotate value="-3.806682320169341E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9815513600232005" />
+          <Scale value="0.9971887945843926" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1448.jpg" />
+        <CachedRegScreenImage value="-Aligned-1449.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-008.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.5957593319914096E-5" />
+          <YOffset value="2.456484856663832E-4" />
+          <Scale value="1.0010464721742032" />
+          <Rotate value="-3.7250170720304343E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9750179811541232" />
+          <Scale value="0.9909121584854419" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1450.jpg" />
+        <CachedRegScreenImage value="-Aligned-1451.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-009.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.63041183891366E-5" />
+          <YOffset value="2.3043232358374577E-4" />
+          <Scale value="1.0020218529170273" />
+          <Rotate value="-3.787816846416159E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9713505578919935" />
+          <Scale value="0.9868935163540454" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1452.jpg" />
+        <CachedRegScreenImage value="-Aligned-1453.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-010.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.6003501784582772E-5" />
+          <YOffset value="2.0642422914299297E-4" />
+          <Scale value="1.0028141182118784" />
+          <Rotate value="-3.618418381920452E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9698901135505672" />
+          <Scale value="0.9816321859678037" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1454.jpg" />
+        <CachedRegScreenImage value="-Aligned-1455.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-011.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.0969792218911154E-5" />
+          <YOffset value="1.8594295200488609E-4" />
+          <Scale value="1.003438234090449" />
+          <Rotate value="-3.5261596785912674E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9670387425565854" />
+          <Scale value="0.9759837846960016" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1456.jpg" />
+        <CachedRegScreenImage value="-Aligned-1457.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-012.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.711788137885196E-5" />
+          <YOffset value="2.1833654706643335E-4" />
+          <Scale value="1.0038649030247166" />
+          <Rotate value="-3.8059396229478404E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9661485162905046" />
+          <Scale value="0.9741305147269299" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1458.jpg" />
+        <CachedRegScreenImage value="-Aligned-1459.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-013.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.4332296304839804E-5" />
+          <YOffset value="2.1411403190221834E-4" />
+          <Scale value="1.0048623589149053" />
+          <Rotate value="-3.943871567503865E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9647492994332953" />
+          <Scale value="0.9705590328198972" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1460.jpg" />
+        <CachedRegScreenImage value="-Aligned-1461.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-014.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.103539145254963E-5" />
+          <YOffset value="1.7969162291950336E-4" />
+          <Scale value="1.0056740533284498" />
+          <Rotate value="-3.6033958452136305E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.963296047370934" />
+          <Scale value="0.9660445885214415" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1462.jpg" />
+        <CachedRegScreenImage value="-Aligned-1463.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-015.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.8905607807855338E-5" />
+          <YOffset value="2.0135576929389276E-4" />
+          <Scale value="1.0061833830037148" />
+          <Rotate value="-3.938219276865551E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9616978763475736" />
+          <Scale value="0.9641199376225469" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1464.jpg" />
+        <CachedRegScreenImage value="-Aligned-1465.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-016.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.767982630833999E-5" />
+          <YOffset value="1.7839701294589116E-4" />
+          <Scale value="1.0071963337462109" />
+          <Rotate value="-3.7959011154886646E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9591429306467734" />
+          <Scale value="0.9607608172173145" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1466.jpg" />
+        <CachedRegScreenImage value="-Aligned-1467.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-017.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.703357701309584E-5" />
+          <YOffset value="1.4602077987374562E-4" />
+          <Scale value="1.0078443534658736" />
+          <Rotate value="-3.4060944885794253E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9567929956722155" />
+          <Scale value="0.9598815629565557" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1468.jpg" />
+        <CachedRegScreenImage value="-Aligned-1469.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-018.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.7094543838784846E-5" />
+          <YOffset value="1.699974436675522E-4" />
+          <Scale value="1.0083192527205391" />
+          <Rotate value="-3.6771067678886826E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9555874441332358" />
+          <Scale value="0.9575244848490204" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1470.jpg" />
+        <CachedRegScreenImage value="-Aligned-1471.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-019.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.210520847327092E-5" />
+          <YOffset value="1.756602588467715E-4" />
+          <Scale value="1.009395879524344" />
+          <Rotate value="-3.6965095196189734E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9531121681649499" />
+          <Scale value="0.9546194057674908" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1472.jpg" />
+        <CachedRegScreenImage value="-Aligned-1473.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-020.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.8626578036428096E-5" />
+          <YOffset value="1.5405670328549892E-4" />
+          <Scale value="1.0101650939471278" />
+          <Rotate value="-3.371405699054697E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9505046217907804" />
+          <Scale value="0.9506611738780072" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1474.jpg" />
+        <CachedRegScreenImage value="-Aligned-1475.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-021.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.479792273701875E-5" />
+          <YOffset value="1.874996124037187E-4" />
+          <Scale value="1.0106670283154693" />
+          <Rotate value="-3.5575815304872416E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9485574978719545" />
+          <Scale value="0.9486437899768683" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1476.jpg" />
+        <CachedRegScreenImage value="-Aligned-1477.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-022.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.9578241765776392E-5" />
+          <YOffset value="1.7331670563905388E-4" />
+          <Scale value="1.011678499935888" />
+          <Rotate value="-3.386188415128166E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9464395731614479" />
+          <Scale value="0.9459434726000724" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1478.jpg" />
+        <CachedRegScreenImage value="-Aligned-1479.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-023.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.459103534821483E-5" />
+          <YOffset value="1.5343305946299846E-4" />
+          <Scale value="1.0122955367676354" />
+          <Rotate value="-3.119736765589409E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9445321954573207" />
+          <Scale value="0.9427593945200093" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1480.jpg" />
+        <CachedRegScreenImage value="-Aligned-1481.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-024.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.7332759243288143E-5" />
+          <YOffset value="1.873456058501255E-4" />
+          <Scale value="1.012757083001626" />
+          <Rotate value="-3.407504399185468E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9428511121084229" />
+          <Scale value="0.9408689479420383" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1482.jpg" />
+        <CachedRegScreenImage value="-Aligned-1483.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-025.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.9863026246708104E-5" />
+          <YOffset value="1.9321080177217564E-4" />
+          <Scale value="1.0139056521845438" />
+          <Rotate value="-3.4978688574699435E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9407028144610464" />
+          <Scale value="0.9380356912835005" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1484.jpg" />
+        <CachedRegScreenImage value="-Aligned-1485.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-026.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.8108330458094235E-5" />
+          <YOffset value="1.5537084862132788E-4" />
+          <Scale value="1.0147070592138479" />
+          <Rotate value="-3.081132469354708E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9396310968589117" />
+          <Scale value="0.9343182643544031" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1486.jpg" />
+        <CachedRegScreenImage value="-Aligned-1487.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-027.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.326446225130562E-5" />
+          <YOffset value="1.8322465011927358E-4" />
+          <Scale value="1.015213459390618" />
+          <Rotate value="-3.215751204200812E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9381116576397728" />
+          <Scale value="0.9325895849447624" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1488.jpg" />
+        <CachedRegScreenImage value="-Aligned-1489.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-028.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.1495433913859552E-5" />
+          <YOffset value="1.8238236734086088E-4" />
+          <Scale value="1.0161434604116346" />
+          <Rotate value="-3.050621622046057E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9379011674154072" />
+          <Scale value="0.9312660400141117" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1490.jpg" />
+        <CachedRegScreenImage value="-Aligned-1491.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-029.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.6450856415967108E-5" />
+          <YOffset value="1.6708086262878785E-4" />
+          <Scale value="1.0167893846958154" />
+          <Rotate value="-2.7935100008913416E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9372803227943254" />
+          <Scale value="0.928636676672012" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1492.jpg" />
+        <CachedRegScreenImage value="-Aligned-1493.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-030.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="7.448701867196483E-6" />
+          <YOffset value="1.9602514456498743E-4" />
+          <Scale value="1.0172941528217503" />
+          <Rotate value="-3.027542604934763E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9364800208190581" />
+          <Scale value="0.9265997087040806" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1494.jpg" />
+        <CachedRegScreenImage value="-Aligned-1495.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-031.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.291340127715368E-5" />
+          <YOffset value="1.9888386370417455E-4" />
+          <Scale value="1.0184278861839453" />
+          <Rotate value="-2.9742666330545564E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.935126105661119" />
+          <Scale value="0.9248067829654109" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1496.jpg" />
+        <CachedRegScreenImage value="-Aligned-1497.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-032.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.571693839366728E-5" />
+          <YOffset value="1.7184334226294506E-4" />
+          <Scale value="1.0191891854439095" />
+          <Rotate value="-2.6592332692854104E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.932869843955352" />
+          <Scale value="0.9249805740046994" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1498.jpg" />
+        <CachedRegScreenImage value="-Aligned-1499.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-033.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.09128067007358E-5" />
+          <YOffset value="1.8711635471954646E-4" />
+          <Scale value="1.0196706304823335" />
+          <Rotate value="-2.6221571903078944E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.931726206132227" />
+          <Scale value="0.9239941765462524" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1500.jpg" />
+        <CachedRegScreenImage value="-Aligned-1501.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-034.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.3796612852307044E-5" />
+          <YOffset value="1.9357601826827664E-4" />
+          <Scale value="1.0205914716307956" />
+          <Rotate value="-2.535308695499894E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9314082839736809" />
+          <Scale value="0.922309389744376" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1502.jpg" />
+        <CachedRegScreenImage value="-Aligned-1503.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-035.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.4121768207003838E-5" />
+          <YOffset value="1.7765490349844204E-4" />
+          <Scale value="1.021261035679381" />
+          <Rotate value="-2.3774604842091707E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9310354871447971" />
+          <Scale value="0.9207123834445466" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1504.jpg" />
+        <CachedRegScreenImage value="-Aligned-1505.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-036.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.2987475485948252E-5" />
+          <YOffset value="2.0714933640533784E-4" />
+          <Scale value="1.021794637943112" />
+          <Rotate value="-2.4031667931823097E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9301798839246274" />
+          <Scale value="0.9198781824491945" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1506.jpg" />
+        <CachedRegScreenImage value="-Aligned-1507.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-037.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.624357789697939E-5" />
+          <YOffset value="2.005429519240376E-4" />
+          <Scale value="1.0229378166365222" />
+          <Rotate value="-2.2453635728419963E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9299817219639916" />
+          <Scale value="0.9188155189976985" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1508.jpg" />
+        <CachedRegScreenImage value="-Aligned-1509.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-038.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.459678044360424E-5" />
+          <YOffset value="1.7009496837580573E-4" />
+          <Scale value="1.0236367744986319" />
+          <Rotate value="-2.143966745942194E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9301821356518526" />
+          <Scale value="0.9171923863722535" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1510.jpg" />
+        <CachedRegScreenImage value="-Aligned-1511.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-039.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="2.285362878459707E-5" />
+          <YOffset value="1.962272269813714E-4" />
+          <Scale value="1.0241251876934987" />
+          <Rotate value="-2.2695686303136897E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9286731397629996" />
+          <Scale value="0.9167681219213771" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1512.jpg" />
+        <CachedRegScreenImage value="-Aligned-1513.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-040.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.738355946572569E-5" />
+          <YOffset value="1.8449902170594723E-4" />
+          <Scale value="1.0250479318439614" />
+          <Rotate value="-2.2186770283716406E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.927873232552351" />
+          <Scale value="0.9155686724434767" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1514.jpg" />
+        <CachedRegScreenImage value="-Aligned-1515.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-041.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.306065559280369E-5" />
+          <YOffset value="1.5064014408250337E-4" />
+          <Scale value="1.0256483517522113" />
+          <Rotate value="-2.078156828700939E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9272924520168877" />
+          <Scale value="0.9142985526207602" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1516.jpg" />
+        <CachedRegScreenImage value="-Aligned-1517.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-042.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.1645443884065205E-5" />
+          <YOffset value="1.9070520347058695E-4" />
+          <Scale value="1.026239564275775" />
+          <Rotate value="-2.334147009350751E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9264263702516319" />
+          <Scale value="0.9127798708312261" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1518.jpg" />
+        <CachedRegScreenImage value="-Aligned-1519.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-043.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.525754376557111E-5" />
+          <YOffset value="1.7368248804669473E-4" />
+          <Scale value="1.0274582118020383" />
+          <Rotate value="-2.4025047454329096E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9253085425514387" />
+          <Scale value="0.9112066591038694" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1520.jpg" />
+        <CachedRegScreenImage value="-Aligned-1521.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-044.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.6190378859490835E-5" />
+          <YOffset value="1.483615021840301E-4" />
+          <Scale value="1.0280794428625182" />
+          <Rotate value="-2.38581127447679E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9248199951712247" />
+          <Scale value="0.9097047732436829" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1522.jpg" />
+        <CachedRegScreenImage value="-Aligned-1523.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-045.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.597391790763349E-5" />
+          <YOffset value="1.779535801197385E-4" />
+          <Scale value="1.0285849066163784" />
+          <Rotate value="-2.56227137200582E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9242645061277789" />
+          <Scale value="0.9088786102042494" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1524.jpg" />
+        <CachedRegScreenImage value="-Aligned-1525.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-046.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.581524940673986E-5" />
+          <YOffset value="1.7566027887844227E-4" />
+          <Scale value="1.0295608551229265" />
+          <Rotate value="-2.6339056163110497E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.924100198319298" />
+          <Scale value="0.9071960749755635" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1526.jpg" />
+        <CachedRegScreenImage value="-Aligned-1527.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-047.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="4.215825001668838E-5" />
+          <YOffset value="1.5118723737825301E-4" />
+          <Scale value="1.030204591222168" />
+          <Rotate value="-2.822648063913191E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9229201558829198" />
+          <Scale value="0.9069035405126094" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1528.jpg" />
+        <CachedRegScreenImage value="-Aligned-1529.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-048.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="7.797231317424602E-5" />
+          <YOffset value="2.0205445528437282E-4" />
+          <Scale value="1.0308476626915801" />
+          <Rotate value="-3.036721458897218E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9212032544722242" />
+          <Scale value="0.9071209738914942" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1530.jpg" />
+        <CachedRegScreenImage value="-Aligned-1531.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-049.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.0683094724187048E-4" />
+          <YOffset value="1.8490875546847696E-4" />
+          <Scale value="1.0319907510502258" />
+          <Rotate value="-3.0639809900973036E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9205214272891907" />
+          <Scale value="0.9062996974171323" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1532.jpg" />
+        <CachedRegScreenImage value="-Aligned-1533.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-050.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.1938604001573982E-4" />
+          <YOffset value="1.521102596030166E-4" />
+          <Scale value="1.0326025092471218" />
+          <Rotate value="-2.930698286378597E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9212800388342394" />
+          <Scale value="0.9052655849836451" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1534.jpg" />
+        <CachedRegScreenImage value="-Aligned-1535.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-051.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.2260958064544414E-4" />
+          <YOffset value="1.7412964101243267E-4" />
+          <Scale value="1.0331380934045054" />
+          <Rotate value="-3.0272061654224025E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9218029509647947" />
+          <Scale value="0.9045540970655997" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1536.jpg" />
+        <CachedRegScreenImage value="-Aligned-1537.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-052.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.1305180128434733E-4" />
+          <YOffset value="1.6046076638565054E-4" />
+          <Scale value="1.0341160126011" />
+          <Rotate value="-2.9055639842678893E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9215658981621948" />
+          <Scale value="0.9041421843790658" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1538.jpg" />
+        <CachedRegScreenImage value="-Aligned-1539.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-053.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="8.466750193542039E-5" />
+          <YOffset value="1.3085755889336026E-4" />
+          <Scale value="1.0347898359513517" />
+          <Rotate value="-2.8364418940574065E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9208317237016573" />
+          <Scale value="0.9044023544789599" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1540.jpg" />
+        <CachedRegScreenImage value="-Aligned-1541.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-054.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="6.807524447025037E-5" />
+          <YOffset value="1.695173067645106E-4" />
+          <Scale value="1.0354627100084406" />
+          <Rotate value="-2.949708760021097E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9217269381002954" />
+          <Scale value="0.9036839825624052" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1542.jpg" />
+        <CachedRegScreenImage value="-Aligned-1543.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-055.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="4.939283694507801E-5" />
+          <YOffset value="1.466105968680187E-4" />
+          <Scale value="1.0365938913083033" />
+          <Rotate value="-2.8979238752568914E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9213894260740281" />
+          <Scale value="0.903328770587254" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1544.jpg" />
+        <CachedRegScreenImage value="-Aligned-1545.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-056.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="3.700389129765447E-5" />
+          <YOffset value="1.2171221122700415E-4" />
+          <Scale value="1.0372135423334012" />
+          <Rotate value="-2.8917117526638947E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9216722776309333" />
+          <Scale value="0.9032538501599845" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1546.jpg" />
+        <CachedRegScreenImage value="-Aligned-1547.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-057.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="4.549000679937576E-5" />
+          <YOffset value="1.5901694147071876E-4" />
+          <Scale value="1.037771299707658" />
+          <Rotate value="-2.944837216824481E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.922807430400481" />
+          <Scale value="0.9038545836289132" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1548.jpg" />
+        <CachedRegScreenImage value="-Aligned-1549.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-058.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="4.6526399991975165E-5" />
+          <YOffset value="1.562616769557046E-4" />
+          <Scale value="1.0387891788161248" />
+          <Rotate value="-2.887313642621625E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9240745273275516" />
+          <Scale value="0.9037580012302339" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1550.jpg" />
+        <CachedRegScreenImage value="-Aligned-1551.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-059.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="4.6963168913977116E-5" />
+          <YOffset value="1.3166412456883103E-4" />
+          <Scale value="1.0394041265225153" />
+          <Rotate value="-2.8482319428307923E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.925871590566337" />
+          <Scale value="0.9050663045784739" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1552.jpg" />
+        <CachedRegScreenImage value="-Aligned-1553.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-060.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="7.368958375669754E-5" />
+          <YOffset value="1.8294123222306613E-4" />
+          <Scale value="1.0401025189956974" />
+          <Rotate value="-2.818487847476292E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9282832793674658" />
+          <Scale value="0.9066157779156482" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1554.jpg" />
+        <CachedRegScreenImage value="-Aligned-1555.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-061.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="7.518269388784304E-5" />
+          <YOffset value="1.5348683634641702E-4" />
+          <Scale value="1.0412435000011566" />
+          <Rotate value="-2.718154584023802E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9319433434483353" />
+          <Scale value="0.9080855160097097" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1556.jpg" />
+        <CachedRegScreenImage value="-Aligned-1557.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-062.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="9.84118715694482E-5" />
+          <YOffset value="1.1910228436168291E-4" />
+          <Scale value="1.041799166056226" />
+          <Rotate value="-2.9374326475489765E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.935405137831281" />
+          <Scale value="0.9086948580445913" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1558.jpg" />
+        <CachedRegScreenImage value="-Aligned-1559.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-063.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.6190676813901406E-4" />
+          <YOffset value="1.38948892252716E-4" />
+          <Scale value="1.0423332559380274" />
+          <Rotate value="-2.5580498615873637E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9375586378677103" />
+          <Scale value="0.9100328513951285" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1560.jpg" />
+        <CachedRegScreenImage value="-Aligned-1561.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-064.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.4791668101613031E-4" />
+          <YOffset value="1.5437655024544417E-4" />
+          <Scale value="1.0433779408149781" />
+          <Rotate value="-2.2783691381017546E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9377382347600353" />
+          <Scale value="0.9143111955224795" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1562.jpg" />
+        <CachedRegScreenImage value="-Aligned-1563.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-065.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="9.214034321108899E-5" />
+          <YOffset value="1.5725398818661196E-4" />
+          <Scale value="1.0440872926341973" />
+          <Rotate value="-2.385716634187851E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9407911658075941" />
+          <Scale value="0.9158814627979657" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1564.jpg" />
+        <CachedRegScreenImage value="-Aligned-1565.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-066.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="9.950565455538185E-5" />
+          <YOffset value="2.1331483603126422E-4" />
+          <Scale value="1.0447695765237517" />
+          <Rotate value="-2.3370132409256117E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9440705781049399" />
+          <Scale value="0.9176233305741603" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1566.jpg" />
+        <CachedRegScreenImage value="-Aligned-1567.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-067.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="7.492565478120494E-5" />
+          <YOffset value="2.0991238069889562E-4" />
+          <Scale value="1.0458269632822959" />
+          <Rotate value="-2.369231641525249E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9490051728285936" />
+          <Scale value="0.9184973276272094" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1568.jpg" />
+        <CachedRegScreenImage value="-Aligned-1569.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-068.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="5.63558804718145E-5" />
+          <YOffset value="1.9291242515007134E-4" />
+          <Scale value="1.0464330471516674" />
+          <Rotate value="-2.452169466943266E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9522422657757884" />
+          <Scale value="0.9203860944595164" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1570.jpg" />
+        <CachedRegScreenImage value="-Aligned-1571.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-069.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="7.923182085661784E-5" />
+          <YOffset value="2.36457200567447E-4" />
+          <Scale value="1.0470007286827363" />
+          <Rotate value="-2.4158351150332935E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9541111079526992" />
+          <Scale value="0.9219132600719879" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1572.jpg" />
+        <CachedRegScreenImage value="-Aligned-1573.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-070.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="8.133320776207431E-5" />
+          <YOffset value="2.4519207346612726E-4" />
+          <Scale value="1.0480595932180583" />
+          <Rotate value="-2.3381081542633853E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9556881979163558" />
+          <Scale value="0.9244317740908659" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1574.jpg" />
+        <CachedRegScreenImage value="-Aligned-1575.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-071.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="7.053551288718762E-5" />
+          <YOffset value="2.2655402278096148E-4" />
+          <Scale value="1.048701688072516" />
+          <Rotate value="-2.3318693300761195E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9592877006636238" />
+          <Scale value="0.9274410248674174" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1576.jpg" />
+        <CachedRegScreenImage value="-Aligned-1577.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-072.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.023783342578577E-4" />
+          <YOffset value="2.7548977209540526E-4" />
+          <Scale value="1.0493911300987835" />
+          <Rotate value="-2.1762896785482155E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9619015568833982" />
+          <Scale value="0.9293436629274031" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1578.jpg" />
+        <CachedRegScreenImage value="-Aligned-1579.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-073.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="8.972314358798861E-5" />
+          <YOffset value="2.628827440872561E-4" />
+          <Scale value="1.050444898496445" />
+          <Rotate value="-2.3025464841219812E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9658945296898694" />
+          <Scale value="0.9311789201349043" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1580.jpg" />
+        <CachedRegScreenImage value="-Aligned-1581.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-074.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="9.502114860446276E-5" />
+          <YOffset value="2.4172408051512106E-4" />
+          <Scale value="1.0510452008157447" />
+          <Rotate value="-2.4079848282620997E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9692970032701037" />
+          <Scale value="0.9334012238617877" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1582.jpg" />
+        <CachedRegScreenImage value="-Aligned-1583.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-075.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.3528616951999362E-4" />
+          <YOffset value="2.8713590095419406E-4" />
+          <Scale value="1.0516221609096723" />
+          <Rotate value="-2.262431721714031E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9727423417744253" />
+          <Scale value="0.9354900776952725" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1584.jpg" />
+        <CachedRegScreenImage value="-Aligned-1585.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-076.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.4446057518094357E-4" />
+          <YOffset value="3.059287587411641E-4" />
+          <Scale value="1.0527347559396913" />
+          <Rotate value="-2.1439834470304842E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9802442987778707" />
+          <Scale value="0.9384796220622109" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1586.jpg" />
+        <CachedRegScreenImage value="-Aligned-1587.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-077.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.3273172991465354E-4" />
+          <YOffset value="2.851157821609218E-4" />
+          <Scale value="1.0534622512239327" />
+          <Rotate value="-2.197034457111502E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.98420603840024" />
+          <Scale value="0.9415011957703954" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1588.jpg" />
+        <CachedRegScreenImage value="-Aligned-1589.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-078.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.6073345352893287E-4" />
+          <YOffset value="3.313312728741302E-4" />
+          <Scale value="1.0541262834262106" />
+          <Rotate value="-1.868043026507782E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9856536296154729" />
+          <Scale value="0.944901299045745" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1590.jpg" />
+        <CachedRegScreenImage value="-Aligned-1591.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-079.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.4522922868068222E-4" />
+          <YOffset value="3.3085950119768337E-4" />
+          <Scale value="1.055107728880436" />
+          <Rotate value="-1.7879446106711105E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9909560770657638" />
+          <Scale value="0.9475370036796531" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1592.jpg" />
+        <CachedRegScreenImage value="-Aligned-1593.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-080.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.3779313773074064E-4" />
+          <YOffset value="3.185761473151749E-4" />
+          <Scale value="1.0556750682186897" />
+          <Rotate value="-1.7794885716737596E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9960018013331824" />
+          <Scale value="0.9509316986692882" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1594.jpg" />
+        <CachedRegScreenImage value="-Aligned-1595.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-081.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.6571970940848502E-4" />
+          <YOffset value="3.659814924464877E-4" />
+          <Scale value="1.056252454200111" />
+          <Rotate value="-1.3577574269046933E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="0.9990361644249682" />
+          <Scale value="0.9530886607070148" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1596.jpg" />
+        <CachedRegScreenImage value="-Aligned-1597.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-082.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.584827453033344E-4" />
+          <YOffset value="3.858359820320678E-4" />
+          <Scale value="1.0573807090946594" />
+          <Rotate value="-1.1018670493401217E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="1.004949383177174" />
+          <Scale value="0.9560018063590887" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1598.jpg" />
+        <CachedRegScreenImage value="-Aligned-1599.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-083.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.458194385713929E-4" />
+          <YOffset value="3.69151800464651E-4" />
+          <Scale value="1.0581281873634234" />
+          <Rotate value="-1.0619787203924869E-4" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="1.0112015876591072" />
+          <Scale value="0.9597483011419795" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1600.jpg" />
+        <CachedRegScreenImage value="-Aligned-1601.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-084.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.6951560521960563E-4" />
+          <YOffset value="4.223336517087395E-4" />
+          <Scale value="1.0587622112579755" />
+          <Rotate value="-5.572955630150922E-5" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="1.015953775275375" />
+          <Scale value="0.9623008715148086" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1602.jpg" />
+        <CachedRegScreenImage value="-Aligned-1603.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-085.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.5443412438792548E-4" />
+          <YOffset value="4.217135232934266E-4" />
+          <Scale value="1.0597414048204363" />
+          <Rotate value="-4.251914607672491E-5" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="1.0208594266375877" />
+          <Scale value="0.9652631347735616" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1604.jpg" />
+        <CachedRegScreenImage value="-Aligned-1605.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-086.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.4899052337349894E-4" />
+          <YOffset value="4.08898700154009E-4" />
+          <Scale value="1.0603190701752847" />
+          <Rotate value="-3.463931238861795E-5" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="1.0255785333121552" />
+          <Scale value="0.9683873600090849" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1606.jpg" />
+        <CachedRegScreenImage value="-Aligned-1607.jpg" />
+      </StackFrame>
+      <StackFrame>
+        <ImageSource>
+          <Source value="P1070712\P1070712-087.jpg" />
+        </ImageSource>
+        <RegistrationParameters>
+          <XOffset value="1.7244865988871871E-4" />
+          <YOffset value="4.7725801901796205E-4" />
+          <Scale value="1.0609173187903749" />
+          <Rotate value="3.6135701332207226E-5" />
+          <LimitFlags value="0" />
+        </RegistrationParameters>
+        <BrightnessCorrectionParameters>
+          <GammaAdjustment value="1.0291762476109432" />
+          <Scale value="0.970412606382279" />
+        </BrightnessCorrectionParameters>
+        <CachedUnregScreenImage value="-Unaligned-1608.jpg" />
+        <CachedRegScreenImage value="-Aligned-1609.jpg" />
+      </StackFrame>
+    </StackFrames>
+    <OutputSequenceNumber value="2" />
+    <OutputImages length="2">
+      <OutputImage>
+        <Description value="2019-12-14-18.14.12 ZS PMax" />
+        <FileName value="2019-12-14-18.14.12 ZS PMax.zsy" />
+      </OutputImage>
+      <OutputImage>
+        <Description value="2019-12-14-18.26.09 ZS DMap" />
+        <FileName value="2019-12-14-18.26.09 ZS DMap.zsy" />
+      </OutputImage>
+    </OutputImages>
+  </StackerProject>
+</ZereneStacker>
+

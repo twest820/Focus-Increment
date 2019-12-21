@@ -1,4 +1,5 @@
-﻿using System.Xml;
+﻿using System;
+using System.Xml;
 
 namespace FocusIncrement.Zerene
 {
@@ -17,6 +18,53 @@ namespace FocusIncrement.Zerene
             this.CachedUnregScreenImage = null;
             this.ImageSource = null;
             this.RegistrationParameters = new RegistrationParameters();
+        }
+
+        public StackFrame(XmlReader reader)
+            : this()
+        {
+            while (reader.EOF == false)
+            {
+                if (reader.IsStartElement())
+                {
+                    if (reader.IsStartElement(Constant.Zerene.Element.BrightnessCorrectionParameters))
+                    {
+                        this.BrightnessCorrectionParameters = new BrightnessCorrectionParameters(reader.ReadSubtree());
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.CachedRegScreenImage))
+                    {
+                        this.CachedRegScreenImage = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.CachedUnregScreenImage))
+                    {
+                        this.CachedUnregScreenImage = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.ImageSource))
+                    {
+                        reader.Read();
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.RegistrationParameters))
+                    {
+                        this.RegistrationParameters = new RegistrationParameters(reader.ReadSubtree());
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.Source))
+                    {
+                        this.ImageSource = this.ReadValueAsString(reader);
+                    }
+                    else if (reader.IsStartElement(Constant.Zerene.Element.StackFrame))
+                    {
+                        reader.Read();
+                    }
+                    else
+                    {
+                        throw new XmlException(String.Format("Unhandled element '{0}'.", reader.Name));
+                    }
+                }
+                else
+                {
+                    reader.Read();
+                }
+            }
         }
 
         public void Write(XmlWriter writer)
